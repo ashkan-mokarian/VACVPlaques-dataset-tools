@@ -1,0 +1,23 @@
+Image->Lookup-> Royal: very good for visualisation
+
+DoG detector
+Estimated object diameter: 15 microns
+Quality threshold: 6
+Preprocess with median filter: unchecked
+Sub-pixel localization: checked
+
+Simple LAP tracker
+Linking max distance: 15 microns
+Gap-closing max distance: 50
+Gap-closing max frame gap: 20
+
+No filtering set
+
+For debugging tracker and filter settings, the following can become useful:
+- show tracks color coded by the end time, since we know that once infected they go until the end. Use this to be able to check which ones end earlier than supposed to do especially for starting frames.
+
+Used track mate batcher in track mate-helper update site to run in batches.
+
+Note:
+There are some common properties that could be exploited to get better results:
+- intensity of infected spots grow with time, also their diameter. 

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "infectio-dataset-tools"
+version = "0.1.0"
+description = ""
+authors = ["ashkan <ashkan.mokarian@gmail.com>"]
+readme = "README.md"
+packages = [{include = "infectio_dataset_tools"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tifffile = "^2023.7.4"
+pandas = "^2.0.3"
+imageio = "^2.31.1"
+ipykernel = "^6.24.0"
+matplotlib = "^3.7.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
