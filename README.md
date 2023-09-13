@@ -1,5 +1,5 @@
 # Description
-Contains codes and scripts for data analysis (exploration and preparation) for
+Contains code and script for data analysis (exploration and preparation) for
 VACV Plaques dataset.
 
 # Main steps to create dataset for infectio-photorealism
