@@ -35,4 +35,11 @@ not the whole dataset. [This notebook](./notebooks/2_plaque_u2tou1_and_statistic
 ## motility analysis based on trackmate results
 [motility analysis notebook](./notebooks/3_motility_analysis_from_trackmate_results.ipynb)
 shows frame to frame (backward difference) speed for different strains with 
-inf_time (frames passed after infection) as parameter. 
+inf_time (frames passed after infection) as parameter.
+
+## direction deviation noise angle
+[direction deviation angle notebook](./notebooks/4_direction_deviation_angle_from_trackmate.ipynb)
+uses trackamte results to find the angle between the frame movement direction and
+a central moving average of the movement over a longer period. Was hoping for smaller
+angles but std of the angles are around 60 degrees which is too large to be consired
+as just noise I would say.
