@@ -29,3 +29,10 @@ Also, these files have a range much smaller than the dtype uint16 allows. Theref
 using cv2 to linearly rescale the values to the range of uint8 dtype. max and min
 values for rescaling is computed using each .tiff file (contain 169 frames) and
 not the whole dataset. [This notebook](./notebooks/2_plaque_u2tou1_and_statistics.ipynb) does this.
+
+# Extract simulation model parameters
+
+## motility analysis based on trackmate results
+[motility analysis notebook](./notebooks/3_motility_analysis_from_trackmate_results.ipynb)
+shows frame to frame (backward difference) speed for different strains with 
+inf_time (frames passed after infection) as parameter. 
