@@ -2,7 +2,7 @@
 Contains code and script for data analysis (exploration and preparation) for
 VACV Plaques dataset.
 
-# Main steps to create dataset for infectio-photorealism
+# related to infectio-photorealism - Main steps to create dataset
 
 ## Creating spots .csv data using trackmate
 [These options](./attachments/trackmate_configs.txt) are used with trackmate to
@@ -30,7 +30,19 @@ using cv2 to linearly rescale the values to the range of uint8 dtype. max and mi
 values for rescaling is computed using each .tiff file (contain 169 frames) and
 not the whole dataset. [This notebook](./notebooks/2_plaque_u2tou1_and_statistics.ipynb) does this.
 
-# Extract simulation model parameters
+# related to Infectio - Extract simulation model parameters
+
+## Create reference metrics csv file for simulation evaluation
+[create reference metrics notebook](./notebooks/6_create_reference_metrics_csv_for_infectio.ipynb)
+is used to create a reference metrics csv file to evaluate simulation results.
+Current metrics used are: mean and std values of infected cell counts, and mean
+and std of the radius of the plaque at each time of experiment hours post
+infection.
+
+Currently not using all the available dataset, but only the ones that are
+clean. That is the ones that have a single plaque center.
+
+**ToDo**: Can also add radial velocity as another metric.
 
 ## motility analysis based on trackmate results
 [motility analysis notebook](./notebooks/3_motility_analysis_from_trackmate_results.ipynb)
