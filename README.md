@@ -37,12 +37,11 @@ not the whole dataset. [This notebook](./notebooks/2_plaque_u2tou1_and_statistic
 is used to create a reference metrics csv file to evaluate simulation results.
 Current metrics used are: mean and std values of infected cell counts, and mean
 and std of the radius of the plaque at each time of experiment hours post
-infection.
+infection. and radial velocity. Also added another column to each metric, a list of all
+the numbers that mean and std were computed, such that 2sample tests can be used.
 
 Currently not using all the available dataset, but only the ones that are
 clean. That is the ones that have a single plaque center.
-
-**ToDo**: Can also add radial velocity as another metric.
 
 ## motility analysis based on trackmate results
 [motility analysis notebook](./notebooks/3_motility_analysis_from_trackmate_results.ipynb)
